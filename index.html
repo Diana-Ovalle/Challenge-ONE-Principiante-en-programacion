@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador challenge</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="imagen/Vector.png" alt="logo de alura">
+    </header>
+    <main>
+        <section class="seccion1">
+            <div class="contenedor-cajatexto">
+                <textarea id="caja-texto" class="caja-texto" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="alerta">
+                <img  class="imagen-alerta" src="imagen/Alerta.png" alt="alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="contenedor-botones">
+                <input type="button" class="btn-encriptar" value="Encriptador" onclick="encriptar_text()">
+                <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()">
+
+            </div>
+        </section>
+        <section class="seccion2">
+            <div class="contenedor-munheco">
+                <img src="imagen/Muñeco.png" alt="Muñeco de alura">
+            </div>
+            <div class="contenedortex-munheco">
+                <textarea id="cajatexto-munheco" class="cajatexto-munheco"></textarea>
+            </div>
+            <div class="contenedor-parrafo">
+                <h3>Ningún mensaje fue <br> encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o <br> desencriptar </p>
+            </div>
+            <div class="contenedor-copiar">
+                <input type="button" class="btn-copiar" value="Copiar" onclick="copyClipboard()">
+                
+            </div>
+            <div class="contenedor-resultado">
+                <p class="texto-resultado"></p>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
